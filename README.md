@@ -50,26 +50,46 @@ If not, you type in a new cutoff and press enter after which it will recompute t
 Upon accepting the clusters computed, the script automatically begins analyzing the clusters and computing growth curves and videos. 
 This process takes some time, but is run in parallel to optimize speed. 
 The end result is a movie for each file called for example `Clustered Group 0.mp4` and a growth curve callled `Group 8 Growth curve` which may be fitted to extract growth parameters. 
+## Fit growth curves
+Upon completion of clustering, the individual growth curves may be fit. 
+The script `fitter-rate calculation.py` contains functions to do so. 
+In the current implementation of the repository, the script will run an example which relies on completion of cluster segmentation on the example data with a cutoff of 0.92. 
+If done, running the command 
 
+    python fitter-rate\ calculation.py
+    
+will fit two of the clusters, a symmetric and assymetric cluster with a single growth mode and a switching one respectively.
 
 # Repository overview
-The repository consists of two key scripts:
-
+To sum up, here is a description of each of the scripts in this repository (apart from stuff relating to readme):
 <ol>
   <li>
     <code>Automated_aggregate_analysis.py</code> 
   </li>
     <ol>
       <li>
-        
+       Runs clustering analysis on an input csv file of REPLOM observations. 
+       Upon completion, it computes growth curves and generates movies for all clusters.
       </li>
     </ol>
   </li>
   <li>
   <code>fitter-rate calculation.py</code>
-  
 </li>
     <ol>
-        <li>Explanation</li>
+        <li>Contains fit functions to fit individual clusters</li>
       </ol>
+<li>
+    <code>example_raw data.csv</code>
+     <ol>
+        <li>Example data set for instructional use</li>
+      </ol>
+</li>
+<li>
+    <code>mst_clustering.py</code>
+     <ol>
+        <li>Auxillary script to compute Euclidean Spanning tree clustering, modified from the [AstroML](https://www.astroml.org/index.html)</li>
+      </ol>
+</li>
 </ol>
+
