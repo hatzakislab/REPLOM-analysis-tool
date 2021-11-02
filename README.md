@@ -26,6 +26,16 @@ The scripts rely on a set of libraries. To install them, navigate to the cloned 
 
     pip install -r requirements.txt
 
+If this does not work (as for example on the M1 apple chip), the individual libraries must be installed by the user using either pip or conda. 
+For most this will include (along with subdependencies of these libraries of course): 
+<ol>
+    <li><code>matplotlib</code></li>
+    <li><code>iminuit</code></li>
+    <li><code>multiprocess</code></li>
+    <li><code>sklearn</code></li>
+    <li><code>tqdm</code></li>
+</ol>
+
 The animations are built using 'FuncAnimation' from 'matplotlib' which requires ffmpeg. 
 If you do not have this on your system, you can run 
 
