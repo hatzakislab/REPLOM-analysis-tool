@@ -2,7 +2,7 @@
 
 This repository contains a pipeline for analysis of data obtained through REal-time kinetics via binding and Photobleaching LOcalization Microscopy (REPLOM). 
 The methodology is described in https://doi.org/10.1101/2021.08.20.457097 and made available here for convenience.
-The tool relies on clustering with a euclidean minimum spanning tree which is implemented in the [AstroML](https://www.astroml.org/index.html) package (see [here](https://www.astroml.org/book_figures/chapter6/fig_great_wall_MST.html) for an example use of the clustering methodology). 
+The tool relies on clustering with a euclidean minimum spanning tree which is implemented in the [AstroML](https://www.astroml.org/index.html) package (see [here](https://www.astroml.org/book_figures/chapter6/fig_great_wall_MST.html) for an example use of the clustering methodology). It is therefore under the BSD license. 
 
 # Introduction
 The input data consists of STORM localizations in a csv file from blinking fluorophores with timestamps. 
@@ -24,19 +24,29 @@ The steps below guide you though an example use of how to employ this tool for a
 ## Installation
 The scripts rely on a set of libraries. To install them, navigate to the cloned repository and run the command 
 
-        pip install -r requirements.txt
+    pip install -r requirements.txt
+
+If this does not work (as for example on the M1 apple chip), the individual libraries must be installed by the user using either pip or conda. 
+For most this will include (along with subdependencies of these libraries of course): 
+<ol>
+    <li><code>matplotlib</code></li>
+    <li><code>iminuit</code></li>
+    <li><code>multiprocess</code></li>
+    <li><code>sklearn</code></li>
+    <li><code>tqdm</code></li>
+</ol>
 
 The animations are built using 'FuncAnimation' from 'matplotlib' which requires ffmpeg. 
 If you do not have this on your system, you can run 
 
-        conda install -c conda-forge ffmpeg
+    conda install -c conda-forge ffmpeg
 
 To install it. 
 ## Segment clusters
 The repository contains an example data set `example_raw data.csv`. 
 After having installed the requirements, you may navigate to the cloned repository (if not already there) and run 
 
-        python Automated_aggregate_analysis.py example_raw\ data.csv 0.92
+    python Automated_aggregate_analysis.py example_raw\ data.csv 0.92
 
 This command calls the script `Automated_aggregate_analysis.py` with the file `example_raw\ data.csv` as input. 
 The only input parameter is the distance cutoff percentile used to segment the euclidean minimum spanning tree (see [here](https://www.astroml.org/book_figures/chapter6/fig_great_wall_MST.html) for an example). 
