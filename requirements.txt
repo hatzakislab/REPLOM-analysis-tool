@@ -1,0 +1,19 @@
+certifi==2021.10.8
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1635519461629/work
+dill==0.3.4
+iminuit==2.8.4
+joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1633637554808/work
+kiwisolver @ file:///Users/runner/miniforge3/conda-bld/kiwisolver_1635836816114/work
+matplotlib @ file:///Users/runner/miniforge3/conda-bld/matplotlib-suite_1632416631285/work
+multiprocess==0.70.12.2
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1634853249489/work
+olefile @ file:///home/conda/feedstock_root/build_artifacts/olefile_1602866521163/work
+Pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1630696664467/work
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1635593541381/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+scikit-learn @ file:///Users/runner/miniforge3/conda-bld/scikit-learn_1635241015035/work
+scipy @ file:///Users/runner/miniforge3/conda-bld/scipy_1633644994244/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1633102299089/work
+tornado @ file:///Users/runner/miniforge3/conda-bld/tornado_1635819711289/work
+tqdm==4.62.3
