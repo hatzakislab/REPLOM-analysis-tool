@@ -2,7 +2,7 @@
 
 This repository contains a pipeline for analysis of data obtained through REal-time kinetics via binding and Photobleaching LOcalization Microscopy (REPLOM). 
 The methodology is described in https://doi.org/10.1101/2021.08.20.457097 and made available here for convenience.
-The tool relies on clustering with a euclidean minimum spanning tree which is implemented in the [AstroML](https://www.astroml.org/index.html) package (see [here](https://www.astroml.org/book_figures/chapter6/fig_great_wall_MST.html) for an example use of the clustering methodology). 
+The tool relies on clustering with a euclidean minimum spanning tree which is implemented in the [AstroML](https://www.astroml.org/index.html) package (see [here](https://www.astroml.org/book_figures/chapter6/fig_great_wall_MST.html) for an example use of the clustering methodology). It is therefore under the BSD license. 
 
 # Introduction
 The input data consists of STORM localizations in a csv file from blinking fluorophores with timestamps. 
