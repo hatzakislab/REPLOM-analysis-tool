@@ -24,19 +24,19 @@ The steps below guide you though an example use of how to employ this tool for a
 ## Installation
 The scripts rely on a set of libraries. To install them, navigate to the cloned repository and run the command 
 
-        pip install -r requirements.txt
+    pip install -r requirements.txt
 
 The animations are built using 'FuncAnimation' from 'matplotlib' which requires ffmpeg. 
 If you do not have this on your system, you can run 
 
-        conda install -c conda-forge ffmpeg
+    conda install -c conda-forge ffmpeg
 
 To install it. 
 ## Segment clusters
 The repository contains an example data set `example_raw data.csv`. 
 After having installed the requirements, you may navigate to the cloned repository (if not already there) and run 
 
-        python Automated_aggregate_analysis.py example_raw\ data.csv 0.92
+    python Automated_aggregate_analysis.py example_raw\ data.csv 0.92
 
 This command calls the script `Automated_aggregate_analysis.py` with the file `example_raw\ data.csv` as input. 
 The only input parameter is the distance cutoff percentile used to segment the euclidean minimum spanning tree (see [here](https://www.astroml.org/book_figures/chapter6/fig_great_wall_MST.html) for an example). 
