@@ -8,8 +8,18 @@ import sys
 import warnings
 import multiprocess as mp
 
-warnings.simplefilter(action="ignore", category=FutureWarning)
 from tqdm import tqdm
+
+import warnings
+
+
+def fxn():
+    warnings.warn("userwarning", UserWarning)
+
+
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+    fxn()
 
 
 def get_clusters(filename, edge_cutoff, savefolder):
