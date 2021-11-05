@@ -22,11 +22,7 @@ Finally, the repository includes a fitting functionality which allows estimation
 # Example use
 The steps below guide you though an example use of how to employ this tool for analysis of REPLOM data. 
 ## Installation
-The scripts rely on a set of libraries. To install them, navigate to the cloned repository and run the command 
-
-    pip install -r requirements.txt
-
-If this does not work (as for example on the M1 apple chip), the individual libraries must be installed by the user using either pip or conda. 
+The scripts rely on a set of libraries. As of now, the individual libraries must be installed by the user using either pip or conda. 
 For most this will include (along with subdependencies of these libraries of course): 
 <ol>
     <li><code>matplotlib</code></li>
@@ -41,6 +37,10 @@ If you do not have this on your system, you can run
 
     conda install -c conda-forge ffmpeg
 
+Or 
+
+    pip install ffmpeg
+    
 To install it. 
 ## Segment clusters
 The repository contains an example data set `example_raw data.csv`. 
