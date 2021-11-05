@@ -58,7 +58,7 @@ If you agree, you type `y` and press enter.
 If not, you type in a new cutoff and press enter after which it will recompute the clustering. 
 
 Upon accepting the clusters computed, the script automatically begins analyzing the clusters and computing growth curves and videos. 
-This process takes some time, but is run in parallel to optimize speed. 
+While this is run in parallel, the process still takes some time (can take up to hours, but movies should be produced continously).
 The end result is a movie for each file called for example `Clustered Group 0.mp4` and a growth curve callled `Group 8 Growth curve` which may be fitted to extract growth parameters. 
 ## Fit growth curves
 Upon completion of clustering, the individual growth curves may be fit. 
